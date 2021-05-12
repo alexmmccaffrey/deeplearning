@@ -1,0 +1,6 @@
+# Ignore venv files
+**/venv
+
+# Ignore pycache
+**/__pycache__
+
