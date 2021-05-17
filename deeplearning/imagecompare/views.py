@@ -46,8 +46,6 @@ class MLModelCheck:
                 return True
         return False
 
-# "tabby, tabby cat" or "tiger cat" or "Persian cat" or "Siamese cat, Siamese" or "Egyptian cat" or "cougar, puma, catamount, mountain lion, painter, panther, Felis concolor" or "lynx, catamount" or "leopard, Panthera pardus" or "snow leopard, ounce, Panthera uncia" or "jaguar, panther, Panthera onca, Felis onca" or "lion, king of beasts, Panthera leo" or "tiger, Panthera tigris" or "cheetah, chetah, Acinonyx jubatus":
-
 class ImageView(APIView):
     def upload(request):
         if request.method == 'POST':
