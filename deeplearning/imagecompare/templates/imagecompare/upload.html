@@ -10,5 +10,10 @@
       {{ form.as_p }}
       <button type="submit">Upload</button>
     </form>
+    {% if cat_check == True %}
+    <p>Awesome, that's a heckin' cat alright!<p>
+    {% elif cat_check == False %}
+    <p>Hmm we don't think that's a cat. Please send us more cat!</p>
+    {% endif %}
   </body>
 </html>

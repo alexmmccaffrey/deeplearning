@@ -3,6 +3,8 @@ from django.conf import settings
 from django.db import models
 from uuid import uuid4
 
+from torch._C import StringType
+
 class Image(models.Model):
     def set_path_and_filename(instance, filename):
         path = settings.MEDIA_ROOT
@@ -12,6 +14,5 @@ class Image(models.Model):
 
     path = set_path_and_filename
     image = models.ImageField(upload_to=path)
-    uploaded_at = models.DateTimeField(auto_now_add=True)
-    
 
+    uploaded_at = models.DateTimeField(auto_now_add=True)
